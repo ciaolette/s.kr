@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="cherry.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ee684e442.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header class="header">
+        <div class="location">
+           <p style="margin-right: 7px; opacity: 0.8; margin-left: 5rem;"><i class="fa-solid fa-house"></i></p> 
+            <p>Seoul, South Korea</p>
+            <i class="fa-solid fa-cloud cloud"></i>
+            <p>23°</p>
+            <i class="fa-solid fa-triangle-exclamation" style="color: orange;"></i>
+        </div>
+    </header>
+    <!--------------------------------------->
+    <div class="current-weather">
+        <div class="cloudy">
+            <h1 style="margin-left: 1em;">CURRENT WEATHER</h1>
+        </div>
+        <div class="celsius">
+            <i class="fa-solid fa-cloud cloud2"></i>
+            <p>23°</p>
+            <h1 style="font-size: 20px;">Cloudy</h1><i class="fa-solid fa-comment" style="margin-top: 1.4em; margin-left: 10px;"></i>
+            <p style="font-size: 17px; margin-top: 3rem; margin-left: -5.7rem;">FEELS LIKE <strong>23°</strong></p>
+        </div>
+        <p style="margin-top: -4em; margin-left: 20px; font-weight: 499;">Heavy thunderstorms will roll through. The high will be 25°.</p>
+        <!------------------------------------------------>
+        <div class="alert">
+        <div class="wind" id="alert">
+            <p>WIND <i class="fa-solid fa-circle-info info" style="font-size: 13px;"></i></p>
+            <h2>5 km/h <i class="fa-solid fa-location-arrow"></i></h2>
+            <span class="text" style="margin-top: -5em; margin-left: 4rem">Light breeze (6 - 12 km/h)<br> Wind felt on face; leaves rustle; wind vane moved by wind.</span>
+        </div>
+         <!------------------------------------->
+         <div class="humi" id="alert">
+            <p>HUMIDITY <i class="fa-solid fa-circle-info info" style="font-size: 13px;"></i></p>
+            <h2>99%</h2>
+            <span class="text" style="margin-top: -5em; margin-left: 5.6rem">Amount of moisture present in the air relative to the maximum amount of moisture the air can contain at its current temperature.</span>
+        </div>
+        <!--------------------------------------------->
+        <div class="visi" id="alert" >
+            <p>VISIBILITY <i class="fa-solid fa-circle-info info" style="font-size: 13px;"></i></p>
+            <h2>5 km </h2>
+            <span class="text"style="margin-top: -5em; margin-left: 5.5rem" >Moderate visibility ( 2 - 5 km)</span>
+        </div>
+        <!-------------------------------------------------->
+        <div class="press" id="alert">
+            <p>PRESSURE <i class="fa-solid fa-circle-info info" style="font-size: 13px;"></i></p>
+            <h2>1011 mb </h2>
+            <span class="text"style="margin-top: -5em; margin-left: 5.5rem">Pressure is the weight of the air in the atmosphere. It is normalized to the standard atmospheric pressure of 1,013.25 mb (14.696 inHg). Higher pressure is usually associated with sunny weather, lower pressure with stormy weather.</span>
+        </div>
+        <!--------------------------------------------------->
+        <div class="dew" id="alert">
+            <p>DEW POINT <i class="fa-solid fa-circle-info info" style="font-size: 13px;"></i></p>
+            <h2>23°</h2>
+            <span class="text" style="margin-top: -5em; margin-left: 6.4rem">The temperature to which the air needs to be cooled for moisture to condense, for example, as dew. The higher the dew point, the more "muggy" it feels.</span>
+        </div>
+    </div>
+    <!------------------------------------------------->
+    <h1 style="font-size: 17px; margin-top: 3em;">1 WEEK FORECAST</h1>
+    <div class="weather">
+    <div class="forecast">
+        <p style="font-weight: 500;">Today</p>
+        <i class="fa-solid fa-cloud-bolt bolt"></i>
+        <h2>25°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">23°</h2>
+        <p class="storm">Heavy t-storms</p>
+        <p class="storm" style="margin-top: -5px; font-size: 13px; opacity: 0.8;"><i class="fa-solid fa-droplet"></i> 95%</p>
+    </div>
+    <i class="fa-solid fa-caret-down triangle"></i>
+    <!-------------------------->
+   
+    <div class="forecast1">
+        <p style="font-weight: 500;">Fri 1</p>
+        <i class="fa-solid fa-cloud-sun sun"></i>
+        <h2>31°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">24°</h2>
+    </div>
+    <div class="forecast1">
+        <p style="font-weight: 500;">Sat 2</p>
+        <i class="fa-solid fa-cloud-sun sun"></i>
+        <h2>32°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">25°</h2>
+    </div>
+    <div class="forecast1">
+        <p style="font-weight: 500;">Sat 3</p>
+        <i class="fa-solid fa-cloud-sun sun"></i>
+        <h2>32°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">25°</h2>
+    </div>
+    <div class="forecast1">
+        <p style="font-weight: 500;">Mon 4</p>
+        <i class="fa-solid fa-cloud-bolt bolt"></i>
+        <h2>32°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">25°</h2>
+    </div>
+    <div class="forecast1">
+        <p style="font-weight: 500;">Tue 5</p>
+        <i class="fa-solid fa-cloud-rain bolt"></i>
+        <h2>30°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">24°</h2>
+    </div>
+    <div class="forecast1">
+        <p style="font-weight: 500;">Wed 6</p>
+        <i class="fa-solid fa-cloud-bolt bolt"></i>
+        <h2>31°</h2>
+        <h2 style="margin-top: -18px; font-weight: 450;">25°</h2>
+    </div>
+</div>
+<!------------------------------------>
+<div class="summary">
+    <div class="sum">
+        <p style="padding-top: 1em; padding-left: 1.5em; font-weight: 500;">Summary</p>
+      <div class="border"></div> <div class="border1" style="margin-top: -3px;"></div>
+    </div>
+<!--------------------------------------->
+    <div class="stats">
+       <div class="numbers">
+        <p style="margin-left: 3em; margin-top: 3.7rem">30°</p>
+        <p style="margin-left: 10em; margin-top: -1rem">29°</p>
+        <p style="margin-left: 18em; margin-top: -1.7rem">28°</p>
+        <p style="margin-left: 25em; margin-top: -3.4rem">30°</p>
+        <p style="margin-left: 34em; margin-top: -3.5rem">31°</p>
+
+        <p style="margin-left: 46em; font-size: 13px; margin-top: -4.5rem;">Today</p>
+        <p style="margin-left: 52em; font-size: 13px; margin-top: -1.8rem">Sat 2</p>
+
+        <p style="margin-left: 45em; margin-top: 3em">27°</p>
+        <p style="margin-left: 53em; margin-top: -2.4rem">28°</p>
+        <p style="margin-left: 60em; margin-top: -3.5rem">30°</p>
+        <p style="margin-left: 68em; margin-top: -3rem">31°</p>
+        <p style="margin-left: 76em; margin-top: -1.5em">29°</p>
+       </div>
+      
+        <table class="area-chart">
+            <div class="dotted"></div>
+            <tbody>
+                <tr>
+                    <td style="--start:0.7; --end:0.5;"> 50 </td>
+                  </tr>
+                  <tr>
+                    <td style="--start:0.5; --end:0.7;"> 50 </td>
+                  </tr>
+                  <tr>
+                    <td style="--start:0.7; --end:0.5;"> 50 </td>
+                  </tr>
+                  <tr>
+                    <td style="--start:0.5; --end:0.7;"> 80 </td>
+                  </tr>
+              <tr>
+                <td class="lastTd" style="--start:0.7; --end:0.6;"> 40 </td>
+              </tr>
+            </tbody>
+          </table>
+         
+          <div class="borderbottom"></div>
+          <div class="dotted1"></div>
+          <div class="icons">
+            <p style="margin-left: 4rem;"><i class="fa-solid fa-sun"></i></p>
+            <p style="margin-left: 13px;"><i class="fa-solid fa-cloud-sun"></i></p>
+            <p style="margin-left: 13px;"><i class="fa-solid fa-cloud-sun"></i></p>
+            <p style="margin-left: 13px;"><i class="fa-solid fa-sun"></i></p>
+
+            <p style="margin-left: 4rem;"><i class="fa-solid fa-cloud-sun-rain"></i></p>
+            <p style="margin-left: 18px;"><i class="fa-solid fa-cloud-moon-rain"></i></p>
+            <p style="margin-left: 3em;"><i class="fa-solid fa-cloud-moon-rain"></i></p>
+            <p style="margin-left: 4.5em;"><i class="fa-solid fa-cloud-moon"></i></p>
+            <p style="margin-left: 4em;"><i class="fa-solid fa-cloud-rain"></i></p>
+
+            <p style="margin-left: 6em;"><i class="fa-solid fa-cloud-moon"></i></p>
+            <p style="margin-left: 4em;"><i class="fa-solid fa-cloud-rain"></i></p>
+            <p style="margin-left: 3.5em;"><i class="fa-solid fa-cloud-rain"></i></p>
+            <p style="margin-left: 10px"><i class="fa-solid fa-cloud-sun"></i></p>
+            <p style="margin-left: 4em;"><i class="fa-solid fa-cloud-rain"></i></p>
+            <p style="margin-left: 4em;"><i class="fa-solid fa-cloud-rain"></i></p>
+            <p style="margin-left: 18px;"><i class="fa-solid fa-cloud-showers-heavy"></i></p>
+            <p style="margin-left: 2em;"><i class="fa-solid fa-cloud-sun"></i></p>
+            <p style="margin-left: 13px;"><i class="fa-solid fa-sun"></i></p>
+         </div>
+          <div class="rain">
+            <p>Rain%</p>
+            <p><i class="fa-solid fa-droplet"> --</i></p>
+            <p><i class="fa-solid fa-droplet" style="margin-left: 3em;"></i> 1%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 10%</p>
+            <p><i class="fa-solid fa-droplet" style="margin-left: 4em;"></i> 4%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 2%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 5%</p>
+
+            <p><i class="fa-solid fa-droplet" style="margin-left: 6em;"></i> 3%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 8%</p>
+            <p><i class="fa-solid fa-droplet" style="margin-left: 4em;"></i> 4%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 5%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 11%</p>
+            <p><i class="fa-solid fa-droplet"style="margin-left: 4em;" ></i> 0%</p>
+            </div>
+            <div class="time">
+                <p style="margin-left: 3.6rem;">Now</p>
+                <p style="margin-left: 3.6rem;">5 PM</p>
+                <p style="margin-left: 4.5rem;" >7 PM</p>
+                <p style="margin-left: 5rem;">9 PM</p>
+                <p style="margin-left: 4.5rem;">11 PM</p>
+                <p style="margin-left: 4.4rem;">1 AM</p>
+                <p style="margin-left: 6rem;">3 AM</p>
+                <p style="margin-left: 4rem;">5 AM</p>
+                <p style="margin-left: 4.5rem;">7 AM</p>
+                <p style="margin-left: 4.5rem;">9 AM</p>
+                <p style="margin-left: 4.4rem;">11 AM</p>
+                <p style="margin-left: 4.2rem;">1 PM</p>
+            </div>
+    </div>
+</div>
+<br><br>
+</body>
+</html>

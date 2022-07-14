@@ -1,0 +1,291 @@
+body{
+    background: #536a8a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    --blue:#597294;
+    --yellow:#ffff78;
+    --chartWidth: 81.6em;
+    --chartHeight: 15em;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    background: #597294;
+    height: 3.8rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+.location p{
+    color: white;
+    display: inline-flex;
+    font-weight: 499;
+}
+.cloud{
+    margin-left: 2rem;
+    background: linear-gradient(to bottom,#536a8a, #fff  );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.current-weather{
+    width: 50rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    color: #fff;
+    height: 20em;
+    background: linear-gradient(-180deg, #324561, #7793bb, #bacce9);
+    background-size: 400% 400%;
+    animation: Animation 15s ease infinite;
+}
+@keyframes Animation {
+    0%{background-position:0% 50%}
+    25%{background-position:10% 50%}
+    50%{background-position:100% 50%}
+    25%{background-position:70% 100%}
+    100%{background-position:0% 50%}
+}
+
+.cloudy h1{
+    font-size: 18px;
+}
+.cloudy{
+    padding: 10px;
+}
+.celsius{
+    display: inline-flex;
+}
+.cloud2{
+    margin-left: 2rem;
+    background: linear-gradient(to bottom,#7693bd, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 5em;
+}
+.celsius p{
+    font-size: 5rem;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+.celsius h1{
+    margin-left: 2rem;
+}
+#alert h2{
+    margin-top: 1em;
+    font-size: 20px;
+    margin-top: -10px;
+    font-weight: 500;
+    cursor: default;
+}
+#alert p{
+    font-size: 15px;
+}
+#alert {
+    margin-left: px;
+    margin-top: 3rem;
+    width: 10em;
+}
+.alert{
+    display: inline-flex;
+    margin-top: -2rem;
+    margin-left: 1rem;
+}
+.text{
+    visibility: hidden;
+    font-size: 12px;
+    width: 10rem;
+    position: absolute;
+    background: white;
+    opacity: 0.9;
+    border-radius: 9px;
+    color: #3e5677;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+#alert:hover .text{
+    visibility: visible;
+    text-decoration: none;
+    opacity: 1;
+    cursor: default;
+}
+#alert p:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.forecast{
+    background: #667ea0;
+    width: 16em;
+    padding: 1px;
+    padding-left: 2em;
+    border-radius: 7px;
+    height: 8em;
+}
+.bolt{
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: linear-gradient(-60deg,#607fa7, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.forecast h2{
+    display: flex;
+    margin-top: -3.5rem;
+    margin-left: 4rem;
+    font-size: 1.4em;
+}
+.storm{
+    margin-top: -5rem;
+    margin-left: 6rem;
+    text-align: right;
+    font-size: 15px;
+    padding-right: 2rem;
+}
+.weather{
+    display: inline-flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
+.forecast1{
+    background: #5c7392;
+    width: 7.5em;
+    padding: 1px;
+    padding-left: 2em;
+    border-radius: 7px;
+    height: 8em;
+    margin-left: 1em;
+}
+.forecast1 h2{
+    display: flex;
+    margin-top: -3.5rem;
+    margin-left: 4.3rem;
+    font-size: 1.4em;
+}
+.sun{
+    font-size: 2.5em;
+    margin-left: 10px;
+    background: linear-gradient(100deg,#ffff78, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.summary{
+    background: #667ea0;
+    width: 81.5em;
+    height: 20rem;
+    border-radius: 5px;
+}
+.border{
+    border-top: .5px solid rgb(255, 255, 255, 0.4);
+    margin-top: -7px;
+}
+.border1{
+    border: 1px solid rgb(255, 255, 255);
+    width: 5em;
+    margin-left: 1rem;
+}
+.borderbottom{
+    border: .5px solid rgb(255, 255, 255, 0.4);
+    margin-top: -.7em;
+}
+.dotted{
+    border: 1px dashed rgb(255, 255, 255, 0.5);
+    margin-top: 7.4rem;
+    transform: rotate(90deg);
+    width: 14em;
+    margin-left: 33.9em;
+    position: absolute;
+}
+.dotted1{
+    border: 1px dashed rgb(255, 255, 255, 0.5);
+    margin-top: -3rem;
+}
+.rain{
+    margin-top: 6px;
+    font-size: 14px;
+    display: inline-flex;
+}
+.rain p{
+    margin-left: 1em;
+}
+.time{
+    display: inline-flex;
+    margin-top: -1em;
+}
+.time p{
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.8;
+    text-shadow: 2px 3px 1px #445a77;
+}
+.numbers p{
+    font-weight: 500;
+    text-shadow: 2px 3px 2px #445a77;
+}
+.icons{
+    position: absolute;
+    display: inline-flex;
+    margin-top: -2.2rem;
+    font-size: 19px;
+}
+.icons p{
+    text-shadow: 2px 3px 5px #445a77;
+}
+/*CHART*/
+.area-chart {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    max-width: var(--chartWidth);
+    height: var(--chartHeight);
+    margin-top: -5px;
+  }
+  .area-chart tbody {
+    width: 100%;
+    height: var(--chartHeight);
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+  }
+  .area-chart tr {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;  
+  }
+  .area-chart td {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:  linear-gradient(to bottom,  rgba(159, 189, 238, 0.8), rgba(255,0,0,0));
+    clip-path: polygon(
+      0% calc(100% * (1 - var(--start))),
+      100% calc(100% * (1 - var(--end))),
+      100% 100%,
+      0% 100%
+    );
+  }
+ .triangle{
+    margin-top: 3.6em;
+    position: absolute;
+    font-size: 32px;
+    margin-left: 3.2rem;
+    color: #667ea0;
+ }
+ .numbers{
+    position: absolute;
+ }
+ *{
+    cursor: default;
+ }
